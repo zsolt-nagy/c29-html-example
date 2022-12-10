@@ -138,15 +138,17 @@ body {
 /* ----------------------------  HEADER  -----------------------------------  */
 .above-the-fold-container {
     height: 100vh;
-    min-height: 80px;
     position: relative;
-    top: 50vh;
+    top: calc(50vh - 100px);
     text-align: center;
 }
 
 .above-the-fold-content {
-    min-height: 80px;
-    outline: 1px solid white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 2px;
 }
 

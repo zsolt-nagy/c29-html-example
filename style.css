@@ -120,6 +120,21 @@ body {
     cursor: pointer;
 }
 
+.btn-outline > .rightarrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.btn-outline:hover > .rightarrow {
+    transform: rotate(90deg);
+}
+
+
+.btn-outline:hover {
+    background-color: #E31B6D;
+    border-color: #E31B6D;
+}
+
 /* ----------------------------  HEADER  -----------------------------------  */
 .above-the-fold-container {
     height: 100vh;

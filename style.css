@@ -117,7 +117,7 @@ body {
 }
 
 /* -------------------------- COMPONENT ------------------------------------  */
-section {
+.main-section {
     margin: 1rem;
 }
 
@@ -211,3 +211,18 @@ section {
 }
 
 /* ----------------------------   MAIN  ------------------------------------  */
+
+/*                  ******** About and Skills **********                      */
+.about-container {
+    display: flex;
+}
+
+.about-whoami {
+    outline: 2px solid deepskyblue;
+    flex-grow: 1;
+}
+
+.about-skills {
+    outline: 2px solid green;
+    flex-grow: 2;
+}

@@ -1,3 +1,11 @@
+:root {
+    --primary: whitesmoke;
+    --secondary: #E31B6D;
+    --bg-primary: #252934; /* background-color: rgb(37, 41, 52); */ /* Alternative notation */
+    --bg-secondary: black;
+}
+
+
 /* Paul Irish reset */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -104,9 +112,8 @@ html {
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: whitesmoke;
-    background-color: #252934;
-    /* background-color: rgb(37, 41, 52); */ /* Alternative notation */
+    color: var(--primary);
+    background-color: var(--bg-primary);
 }
 
 /* -------------------------- COMPONENT ------------------------------------  */
@@ -115,8 +122,8 @@ body {
     font-size: 1.5rem;
     margin: 0.5rem;
     background: none;
-    color: whitesmoke;
-    border: 3px solid whitesmoke;
+    color: var(--primary);
+    border: 3px solid var(--primary);
     cursor: pointer;
 }
 
@@ -131,8 +138,8 @@ body {
 
 
 .btn-outline:hover {
-    background-color: #E31B6D;
-    border-color: #E31B6D;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 /* ----------------------------  HEADER  -----------------------------------  */
@@ -159,7 +166,7 @@ body {
 }
 
 .above-the-fold-content > h1 {
-    color: #E31B6D;
+    color: var(--secondary);
     font-size: 3rem;
     font-weight: 400;
 }
@@ -172,8 +179,8 @@ body {
 
 .main-menu {
     display: flex;
-    border-bottom: 2px solid #E31B6D;
-    background-color: black;
+    border-bottom: 2px solid var(--secondary);
+    background-color: var(--bg-secondary);
 }
 
 .main-menu-item {
@@ -188,7 +195,7 @@ body {
 }
 
 .main-menu-item:hover {
-    color: #E31B6D;
+    color: var(--secondary);
 }
 
 /* ----------------------------   MAIN  ------------------------------------  */

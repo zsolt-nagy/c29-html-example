@@ -137,10 +137,16 @@ body {
 
 /* ----------------------------  HEADER  -----------------------------------  */
 .above-the-fold-container {
-    height: 100vh;
-    position: relative;
-    top: calc(50vh - 100px);
+    height: 200px;
+    margin: calc(50vh - 100px) 0;
     text-align: center;
+}
+
+/* this is just a local fix to avoid negative margins */
+@media screen and (max-height: 200px) {
+    .above-the-fold-container {
+        margin: 0;
+    }
 }
 
 .above-the-fold-content {

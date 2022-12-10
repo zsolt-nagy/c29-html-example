@@ -169,4 +169,26 @@ body {
     font-weight: 400;
 }
 
+
+.main-menu {
+    display: flex;
+    border-bottom: 2px solid #E31B6D;
+    background-color: black;
+}
+
+.main-menu-item {
+    width: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 15px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.main-menu-item:hover {
+    color: #E31B6D;
+}
+
 /* ----------------------------   MAIN  ------------------------------------  */

@@ -1,8 +1,10 @@
 :root {
     --primary: whitesmoke;
     --secondary: #E31B6D;
+    --inverted: black;
     --bg-primary: #252934; /* background-color: rgb(37, 41, 52); */ /* Alternative notation */
     --bg-secondary: black;
+    --bg-inverted: rgb(225, 225, 225);
 }
 
 
@@ -117,8 +119,8 @@ body {
 }
 
 /* -------------------------- COMPONENT ------------------------------------  */
-.main-section {
-    margin: 1rem;
+.about-section {
+    padding: 2rem;
 }
 
 .section-title {
@@ -212,22 +214,28 @@ body {
 
 /* ----------------------------   MAIN  ------------------------------------  */
 
+main {
+    color: var(--inverted);
+    background-color: var(--bg-inverted);
+}
+
 /*                  ******** About and Skills **********                      */
 .about-container {
     display: flex;
 }
 
 .about-whoami {
-    outline: 2px solid deepskyblue;
     flex-grow: 1;
+    flex-basis: 40%;
     text-align: center;
 }
 
-.whoami-h {
+.whoami-h, .skills-h {
     font-size: 2rem;
     letter-spacing: 2px;
     font-weight: 400;
     margin: 1.5rem;
+    text-align: center;
 }
 
 .whoami-img {
@@ -242,6 +250,37 @@ body {
 }
 
 .about-skills {
-    outline: 2px solid green;
     flex-grow: 2;
+    flex-basis: 60%;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-container .logo {
+    width: 100px;
+}
+
+.single-skill-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.skill-title {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
 }

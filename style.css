@@ -373,6 +373,25 @@ form {
 }
 
 
+/* ----------------------------  FOOTER  -----------------------------------  */
+
+.social-media-icon {
+    height: 40px;
+    margin: 10px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 20px auto 40px auto;
+}
+
 
 
 @media screen and (max-width: 768px) {

@@ -263,6 +263,11 @@ input, textarea {
     background-color: var(--bg-secondary);
 }
 
+.sticky-nav {
+    position: sticky;
+    top: 0;
+}
+
 .main-menu-item {
     width: 100px;
     letter-spacing: 1px;

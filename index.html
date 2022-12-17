@@ -106,6 +106,49 @@
         </section>
         <section class="main-section">
             <h2 class="section-title">Contact</h2>
+            <form action="#" method="GET">
+                <div class="form-row">
+                    <div class="input-field">
+                        <input 
+                            type="text" 
+                            placeholder=" " 
+                            name="full-name"
+                            id="name" 
+                            required />
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-field">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            placeholder=" " 
+                            id="email" 
+                            required />
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-field">
+                        <textarea 
+                            name="message" 
+                            id="message" 
+                            placeholder=" " 
+                            cols="30" 
+                            rows="10"
+                            required></textarea>
+                        <label for="message" class="textarea-label">Message</label> 
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button 
+                        type="submit" 
+                        class="btn-dark btn-outline">
+                        Send
+                    </button>
+                </div>
+            </form>
         </section>        
     </main>
     <footer>

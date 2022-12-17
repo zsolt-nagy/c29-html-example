@@ -156,6 +156,72 @@ body {
     border-color: var(--secondary);
 }
 
+.btn-outline.btn-dark {
+    color: var(--inverted);
+    border: 3px solid var(--inverted);
+}
+
+.btn-outline.btn-dark:hover {
+    background-color: var(--secondary);
+    border-color: var(--inverted);
+    color: var(--primary);
+}
+
+
+
+/* Form field component **************************************************    */
+input, textarea {
+    padding: 1rem;
+    width: 300px;
+}
+
+.input-field {
+    position: relative;
+}
+  
+.input-field label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    padding: 2px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-field .textarea-label {
+    top: 1rem;
+}
+
+
+.input-field input {
+    height: 1.5rem;
+}
+
+.input-field textarea {
+    height: 6rem;
+}
+
+/* :not(:placeholder-shown) means that the input field is not empty. */
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input:not(:placeholder-shown) + label,   
+.input-field textarea:not(:placeholder-shown) + label
+{
+    top: 0;
+    font-size: 12px;
+    left: 4px;
+    background-color: white;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    outline: none !important;
+}
+
+
+
 /* ----------------------------  HEADER  -----------------------------------  */
 .above-the-fold-container {
     height: 200px;
@@ -293,6 +359,19 @@ main {
 .project-image {
     width: 100%;
 }
+
+/*                  ******** Contact form **********                          */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row {
+    padding: 1rem;
+}
+
 
 
 
